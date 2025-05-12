@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+/* THEME COLORS */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.blue {
+  background-color: #206592;
+  color: #ffffff;
+}
+
+body.green {
+  background-color: #155b32;
+  color: #ffffff;
+}
+
+/* INPUT + BUTTON STYLES */
+input[type="text"] {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* THEME BUTTONS CONTAINER */
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* BUTTON ANIMATION */
+.theme-btn.clicked {
+  animation: pulse 0.4s;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
